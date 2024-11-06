@@ -8,50 +8,42 @@ const About = () => {
   };
   return (
     <div className=" h-screen text-white tracking-wide flex flex-col bg-fixed place-content-center bg-[url('/hero_about.jpeg')] bg-cover bg-no-repeat">
-      <div className="flex flex-col place-content-center backdrop-blur-sm bg-black/50 h-full p-5">
-        <div className="flex p-2 font-bold text-xl sm:text-2xl">
+      <div className="flex flex-col h-full p-5 place-content-center backdrop-blur-sm bg-black/50">
+        <div className="flex p-2 text-xl font-bold sm:text-2xl">
           <p>About</p>
           <p className="pl-2">Me</p>
         </div>
-        <div className="p-2 font-semibold text-sm md:text-lg tracking-wide">
+        <div className="p-2 text-sm font-semibold tracking-wide md:text-lg">
           Hi, I,m Here To Build Your Dream Project !
         </div>
-        <div className="p-2 text-justify md:font-medium text-sm lg:text-xl tracking-wider">
-          Passionate and self-motivated entry-level Full Stack Web Developer
-          seeking to leverage my strong foundations in HTML, CSS, and
-          JavaScript, along with a keen interest in frameworks like React JS,
-          Next JS and Tailwind CSS, to contribute to building dynamic and
-          user-friendly web applications. Driven by a love for problem-solving
-          and a thirst for continuous learning, I'm eager to join a
-          collaborative team and grow my skills while contributing to real-world
-          projects.
+        <div className="p-2 text-sm tracking-wider text-justify md:font-medium lg:text-xl">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+          commodi nihil eaque ducimus delectus rem accusamus minus quo, nemo
+          facere veniam voluptas laudantium iure consequuntur ad voluptate. In,
+          dolor iste!
         </div>
         <div></div>
         {more ? (
           <>
             <button
               onClick={handleMore}
-              className="  hover:underline hover:underline-offset-2"
+              className=" hover:underline hover:underline-offset-2"
             >
               Read Less
             </button>
-            <div className="p-2 text-justify md:font-medium text-sm lg:text-xl">
-              <p className="py-2 text-2xl text-left font-bold">
-                Creating Impressive web experiences, pixel by pixel
-              </p>
+            <div className="p-2 text-sm text-justify md:font-medium lg:text-xl">
               <p className="tracking-wider">
-                Embarking on a journey as a full-stack web developer from
-                Kolkata, my portfolio showcase cutting-edge designs and
-                streamelined solutions, with the perfect blend of creativity and
-                technical knowledge. Immerse yourself in an array of successful
-                web projects, rendering my footprint in the digital landscape.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                repellendus sunt tenetur necessitatibus voluptatibus asperiores
+                vero voluptas eius explicabo corrupti, quod fugit magni sit
+                officiis perspiciatis natus voluptatum perferendis voluptatem.
               </p>
             </div>
           </>
         ) : (
           <button
             onClick={handleMore}
-            className=" sm:block hidden hover:underline hover:underline-offset-2"
+            className="hidden sm:block hover:underline hover:underline-offset-2"
           >
             Read More ...
           </button>

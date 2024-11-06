@@ -2,8 +2,8 @@ const Portfolio = () => {
   const projects = [
     {
       name: "E-Commerce",
-      details: "Built with React and Tailwind",
-      link: "https://github.com/CodeGuru15/Shopping-site-React_Vite.git",
+      details: "Description of the project",
+      link: "#",
     },
     {
       name: "Social networking site",
@@ -11,27 +11,27 @@ const Portfolio = () => {
       link: "#",
     },
     {
-      name: "Web Scraping",
-      details: "Built with Python",
-      link: "https://github.com/CodeGuru15/Web_Scraping.git",
+      name: "Weather App",
+      details: "Built with integrated API",
+      link: "#",
     },
   ];
   return (
     <div className=" h-screen  text-white bg-[url('/project.webp')] bg-cover bg-no-repeat">
-      <div className=" backdrop-blur-md bg-black/30 h-full p-5 w-full flex flex-col items-center place-content-center">
-        <div className="p-3 text-3xl tracking-wider font-semibold">
+      <div className="flex flex-col items-center w-full h-full p-5  backdrop-blur-md bg-black/30 place-content-center">
+        <div className="p-3 text-3xl font-semibold tracking-wider">
           MY PORTFOLIO
         </div>
-        <ul className=" flex flex-wrap gap-2 justify-center">
+        <ul className="flex flex-wrap justify-center gap-2 ">
           {projects.map((item, index) => {
             return (
               <li
                 key={index}
-                className="w-52 hover:border-blue-600 sm:w-72 border text-center sm:text-xl px-3 py-1 h-32 flex flex-col place-content-center rounded-md"
+                className="flex flex-col h-32 px-3 py-1 text-center border rounded-md w-52 hover:border-blue-600 sm:w-72 sm:text-xl place-content-center"
               >
-                <div className="font-bold py-1">{item.name}</div>
+                <div className="py-1 font-bold">{item.name}</div>
                 <div className="p-2 text-base">{item.details}</div>
-                <a href={item.link} className=" text-xs block cursor-pointer">
+                <a href={item.link} className="block text-xs cursor-pointer ">
                   Visit Site
                 </a>
               </li>
